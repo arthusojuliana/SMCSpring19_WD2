@@ -1,0 +1,9 @@
+.container{
+    background-color: coral;
+}
+
+@media(min-width: 768px){
+    .container{
+        background-color: blue;
+    }
+}
