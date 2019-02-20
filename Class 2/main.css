@@ -53,7 +53,23 @@ nav.navbar li:last-child{
         background-color: blue;
         width: 750px;
         margin: 0px auto;
+    }
 
+    nav.navbar li{
+        display:inline-block;
+        border-bottom: none;
+        border-left: 2px solid salmon;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    nav.navbar li:first-child{
+        border-left: none;
+        padding-left: none;
+    }
+
+    nav.navbar li:last-child{
+        padding-right: none;
     }
 }
 
