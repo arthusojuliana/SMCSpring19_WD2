@@ -1,5 +1,6 @@
 body{
     margin: 0px;
+    background-color:  rgb(238, 248, 238);
 }
 
 h1{
@@ -23,7 +24,7 @@ h2{
 }
 
 .container{
-    background-color:  rgb(238, 248, 238);
+    
     width: 100%;
     min-height: 700px;
     
@@ -68,15 +69,36 @@ nav.navbar li:last-child{
 
 .imghome{
     background-image: url(https://static.onecms.io/wp-content/uploads/sites/37/2015/06/15211759/poisonous-houseplants-874825ab.jpg);
-    width: 100%;
-    
-    
+    width: 100%;   
     
 }
 
+form{
+    margin-top: 50px;
+}
+
+input{
+    width: 80%;
+    display: block;
+    margin: 10px auto;
+}
+
+label{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    margin-left: 42px;
+    
+
+}
+
+.button{
+    margin-top: 20px;
+}
+
+
 @media(min-width: 768px){
     .container{
-        background-color: blue;
+    
         width: 750px;
         margin: 0px auto;
     }
@@ -101,7 +123,7 @@ nav.navbar li:last-child{
 
 @media(min-width: 992px){
     .container{
-        background-color: blueviolet;
+        
         width:960px;
     }
 }
