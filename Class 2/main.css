@@ -102,6 +102,11 @@ label{
     margin-top: 20px;
 }
 
+#messg{
+    min-height: 300px;
+    padding-block-start: 0;
+}
+
 /* Start Products Page */
 
 
