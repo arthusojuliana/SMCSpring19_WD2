@@ -1,0 +1,76 @@
+.container{
+    background-color: cyan;
+}
+
+.red{
+    background-color: lightcoral;
+}
+
+.green{
+    background-color: lightgreen;
+}
+
+.blue{
+    background-color: lightblue;
+}
+
+.yellow{
+    background-color: lightgoldenrodyellow;
+}
+
+.cyan{
+    background-color: turquoise;
+}
+
+.purple{
+    background-color: lightpink;
+}
+
+
+.floatersection{
+    float: left;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 20px;
+    
+}
+
+.clearfix{
+    clear: both;
+}
+
+@media (min-width: 450px){
+    .floatersection{
+        width: 50%;   
+    }
+
+    .small-width-100{
+        width: 100%;    
+    }
+
+}
+
+@media (min-width: 768px){
+   
+    .floatersection{
+        width: 33.33333%;
+    }
+
+    .med-width-100{
+        width:100%;
+    }
+
+    .med-width-50{
+        width:50%;
+    }
+}
+
+@media (min-width: 992px){
+    .floatersection{
+        width: 25%;
+    }
+
+    .large-width-50{
+        width: 50%;
+    }
+}
