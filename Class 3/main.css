@@ -1,41 +1,82 @@
+body{
+    margin: 0;
+}
+
 /*Start Navbar*/
-nav.navbar{
-    background-color: rgb(247, 248, 238);
+nav .title{
+    font-size:25px;
+    color: #B36A5E;
+    line-height: 36px;
+    font-family: 'Raleway', sans-serif;
+    position: fixed;
+    top: 23px;
+    left: 25px;
+}
+nav .burger{
+    display: block;
+    position: fixed;
+    top: 23px;
+    right: 25px;
+}
+
+nav:active .burger{
+    display: none;
+}
+
+.bar{
+    width: 35px;
+    height: 5px;
+    background-color: #B36A5E;
+    margin: 6px 0;
+  }
+
+nav:active .navbar{
+    display: block;
+    position: fixed;
+    top: 75px;
+}
+
+nav .navbar{
+    display: none;
+    background-color: #C89F9C ;
     width: 100%;
     padding: 2px 0px;
 
 }
 
-nav.navbar a{
+nav .navbar a{
     font-size:22px;
     text-decoration: none; /* how to remove the underline text link */
-    color: darkred;
+    color: #EED7C5;
     line-height: 36px;
     font-family: 'Raleway', sans-serif;
 
 
 }
 
-nav.navbar li:hover{
-    background-color: rgb(64, 100, 73, .4);
+nav .navbar li:hover{
+    background-color: #B36A5E;
 }
 
-nav.navbar ul{
+nav .navbar ul{
     list-style: none;
     padding-left: 0px;
     text-align: center;
 }
 
-nav.navbar li{
-    border-bottom: 2px solid rgb(64, 100, 73);
+nav .navbar li{
+    border-bottom: 2px solid #C97C5D;
 }
 
-nav.navbar li:last-child{
+nav .navbar li:last-child{
     border-bottom: none;
 }
 
+
+
 .container{
-    background-color: cyan;
+    background-color: #EEE2DF;
+    margin-top: 85px;
 }
 
 .red{
