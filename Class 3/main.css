@@ -20,8 +20,12 @@ nav .burger{
     right: 25px;
 }
 
-nav:active .burger{
-    display: none;
+nav .burger:focus + .navbar {display: block;}{
+    background-color: #EED7C5;
+    padding-left: 3px;
+    padding-right:3px;
+    border-radius: 5px;
+    + .navbar {display: block;}
 }
 
 .bar{
@@ -31,7 +35,7 @@ nav:active .burger{
     margin: 6px 0;
   }
 
-nav:active .navbar{
+nav .navbar{
     display: block;
     position: fixed;
     top: 75px;
