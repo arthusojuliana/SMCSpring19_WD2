@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background-color: #EEE2DF;
 }
 
 /*Start Navbar*/
@@ -73,7 +74,51 @@ nav .navbar li:last-child{
 }
 
 
+/* Start body */
 
+.floatersection{
+    float: left;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 20px;
+    
+}
+
+h1{
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    color: #B36A5E; 
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+    color: rgb(56, 56, 56);
+    font-size: 17px;
+    line-height: 22px;
+    margin: 0px 15px;
+}
+
+.mobile-0{
+    width: 0;
+}
+
+.mobile-100{
+    width: 100%;
+}
+
+.imgindex{
+    background-image: url(http://1.bp.blogspot.com/-hvPxRXtwQjg/UZUQpC_MrPI/AAAAAAAAAGU/X6HLPgx6yjk/s1600/cristals.jpg);
+    min-height: 350px;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .container{
     background-color: #EEE2DF;
     margin-top: 85px;
@@ -103,14 +148,6 @@ nav .navbar li:last-child{
     background-color: lightpink;
 }
 
-
-.floatersection{
-    float: left;
-    width: 100%;
-    min-height: 200px;
-    margin-bottom: 20px;
-    
-}
 
 .clearfix{
     clear: both;
