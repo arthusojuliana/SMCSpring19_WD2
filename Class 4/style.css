@@ -1,0 +1,9 @@
+.content{
+    padding: 0px 10px;
+    min-height: 506px;
+    border-bottom: 2px solid;
+}
+
+content img{
+    max-width: 100%;
+}
