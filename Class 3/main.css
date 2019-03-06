@@ -1,84 +1,95 @@
+/*Start Navbar*/
+nav .nav{
+    min-height: 300px;
+    background-color: #EEE2DF;
+    z-index: 2;
+    position: fixed;
+
+}
+    nav .title{
+        font-size:25px;
+        color: #B36A5E;
+        line-height: 36px;
+        font-family: 'Raleway', sans-serif;
+        position: fixed;
+        top: 23px;
+        left: 25px;
+    }
+    nav .burger{
+        display: block;
+        position: fixed;
+        top: 23px;
+        right: 25px;
+    }
+
+    nav .burger:focus + .navbar {display: block;}
+    /*
+    {
+        background-color: #EED7C5;
+        padding-left: 3px;
+        padding-right:3px;
+        border-radius: 5px;
+        
+    }
+    */
+
+    .bar{
+        width: 35px;
+        height: 5px;
+        background-color: #B36A5E;
+        margin: 6px 0;
+    }
+
+    nav .navbar{
+        display: block;
+        position: fixed;
+        top: 75px;
+    }
+
+    nav .navbar{
+        display: none;
+        background-color: #C89F9C ;
+        width: 100%;
+        padding: 2px 0px;
+
+    }
+
+    nav .navbar a{
+        font-size:22px;
+        text-decoration: none; /* how to remove the underline text link */
+        color: #EED7C5;
+        line-height: 36px;
+        font-family: 'Raleway', sans-serif;
+
+
+    }
+
+    nav .navbar li:hover{
+        background-color: #B36A5E;
+    }
+
+    nav .navbar ul{
+        list-style: none;
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    nav .navbar li{
+        border-bottom: 2px solid #C97C5D;
+    }
+
+    nav .navbar li:last-child{
+        border-bottom: none;
+    }
+/* END NAVBAR */
+
+
+/* Start body */
+
 body{
     margin: 0;
     background-color: #EEE2DF;
 }
-
-/*Start Navbar*/
-nav .title{
-    font-size:25px;
-    color: #B36A5E;
-    line-height: 36px;
-    font-family: 'Raleway', sans-serif;
-    position: fixed;
-    top: 23px;
-    left: 25px;
-}
-nav .burger{
-    display: block;
-    position: fixed;
-    top: 23px;
-    right: 25px;
-}
-
-nav .burger:focus + .navbar {display: block;}{
-    background-color: #EED7C5;
-    padding-left: 3px;
-    padding-right:3px;
-    border-radius: 5px;
-    + .navbar {display: block;}
-}
-
-.bar{
-    width: 35px;
-    height: 5px;
-    background-color: #B36A5E;
-    margin: 6px 0;
-  }
-
-nav .navbar{
-    display: block;
-    position: fixed;
-    top: 75px;
-}
-
-nav .navbar{
-    display: none;
-    background-color: #C89F9C ;
-    width: 100%;
-    padding: 2px 0px;
-
-}
-
-nav .navbar a{
-    font-size:22px;
-    text-decoration: none; /* how to remove the underline text link */
-    color: #EED7C5;
-    line-height: 36px;
-    font-family: 'Raleway', sans-serif;
-
-
-}
-
-nav .navbar li:hover{
-    background-color: #B36A5E;
-}
-
-nav .navbar ul{
-    list-style: none;
-    padding-left: 0px;
-    text-align: center;
-}
-
-nav .navbar li{
-    border-bottom: 2px solid #C97C5D;
-}
-
-nav .navbar li:last-child{
-    border-bottom: none;
-}
-
-
-/* Start body */
 
 .floatersection{
     float: left;
@@ -88,25 +99,20 @@ nav .navbar li:last-child{
     
 }
 
-h1{
-    margin: 0px;
-    font-family: 'Raleway', sans-serif;
-    color: #B36A5E; 
-    font-weight: 700;
-    font-size: 30px;
-    text-align: center;
-    padding-top: 40px;
-    margin-bottom: 10px;
+.container{
+    background-color: #EEE2DF;
+    margin-top: 85px;
+    z-index: 1;
 }
 
-p{
-    font-family: 'Raleway', sans-serif;
-    color: rgb(56, 56, 56);
-    font-size: 17px;
-    line-height: 22px;
-    margin: 0px 15px;
+.clearfix{
+    clear: both;
 }
 
+/* END BODY */
+
+
+/* START GRID SIZING */
 .mobile-0{
     width: 0;
 }
@@ -114,7 +120,71 @@ p{
 .mobile-100{
     width: 100%;
 }
+/* END GRID SIZING */
+
+
+/* START TYPOGRAPHY */
+    h1{
+        margin: 0px;
+        font-family: 'Raleway', sans-serif;
+        color: #B36A5E; 
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    p{
+        font-family: 'Raleway', sans-serif;
+        color: rgb(56, 56, 56);
+        font-size: 17px;
+        line-height: 22px;
+        margin: 0px 15px;
+    }
+/* END TYPOGRAPHY */
+
+
 /* Start images */
+.img{
+    min-height: 300px;
+    width: 95%;
+    display: block;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center;
+}
+
+.one{
+    background-image: url(https://smhttp-ssl-64693.nexcesscdn.net/media/catalog/product/cache/1/thumbnail/300x375/9df78eab33525d08d6e5fb8d27136e95/a/m/amethystpoint-energymuse.jpg);
+  
+}
+
+.two{
+    background-image: url();
+  
+}
+
+.three{
+    background-image: url();
+  
+}
+
+.four{
+    background-image: url();
+  
+}
+
+.five{
+    background-image: url();
+  
+}
+
+.six{
+    background-image: url();
+  
+}
 .imgindex{
     background-image: url(http://1.bp.blogspot.com/-hvPxRXtwQjg/UZUQpC_MrPI/AAAAAAAAAGU/X6HLPgx6yjk/s1600/cristals.jpg);
     min-height: 350px;
@@ -132,41 +202,9 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 /* end images */
-.container{
-    background-color: #EEE2DF;
-    margin-top: 85px;
-}
-
-.red{
-    background-color: lightcoral;
-}
-
-.green{
-    background-color: lightgreen;
-}
-
-.blue{
-    background-color: lightblue;
-}
-
-.yellow{
-    background-color: lightgoldenrodyellow;
-}
-
-.cyan{
-    background-color: turquoise;
-}
-
-.purple{
-    background-color: lightpink;
-}
 
 
-.clearfix{
-    clear: both;
-}
 
 /*Start Contact Page*/
 form{
@@ -198,9 +236,6 @@ label{
 }
 
 @media (min-width: 450px){
-    .floatersection{
-      
-    }
 
     .small-width-50{
         width: 50%;
@@ -213,10 +248,7 @@ label{
 
 @media (min-width: 768px){
    
-    .floatersection{
-       
-    }
-
+ 
     .med-width-33{
         width: 33.33333%;
     }
@@ -231,9 +263,7 @@ label{
 }
 
 @media (min-width: 992px){
-    .floatersection{
-       
-    }
+
     .large-width-25{
         width: 25%;
     }
