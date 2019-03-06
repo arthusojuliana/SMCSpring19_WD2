@@ -110,7 +110,7 @@ p{
 .mobile-100{
     width: 100%;
 }
-
+/* Start images */
 .imgindex{
     background-image: url(http://1.bp.blogspot.com/-hvPxRXtwQjg/UZUQpC_MrPI/AAAAAAAAAGU/X6HLPgx6yjk/s1600/cristals.jpg);
     min-height: 350px;
@@ -119,6 +119,17 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.imgabout{
+    background-image: url(https://data.whicdn.com/images/58449243/superthumb.jpg?t=1365907750);
+    min-height: 350px;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* end images */
 .container{
     background-color: #EEE2DF;
     margin-top: 85px;
@@ -151,6 +162,35 @@ p{
 
 .clearfix{
     clear: both;
+}
+
+/*Start Contact Page*/
+form{
+    margin-top: 50px;
+}
+
+input, textarea{
+    width: 80%;
+    display: block;
+    margin: 10px auto;
+}
+
+label{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    margin-left: 42px;
+    
+
+}
+
+.button{
+    margin-top: 20px;
+}
+
+#messg{
+    min-height: 300px;
+    
+    
 }
 
 @media (min-width: 450px){
