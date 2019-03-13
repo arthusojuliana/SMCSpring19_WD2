@@ -1,0 +1,70 @@
+.container{
+    text-align: center;
+}
+
+.content{
+    min-height: 200px;
+    position: relative;
+
+}
+
+#vert_cent1{
+    position: relative;
+    height: 300px;
+}
+
+#vert_cent1 img{
+    display: block;
+    top:50%;
+    margin-top: 100px
+}
+
+p{
+    vertical-align: middle;
+    height: 200px;
+    display: table-cell;
+    width:600px;
+    display: inline-block;
+   
+    
+}
+
+#lorem1{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0px; /* margins affect this!! */
+}
+
+
+
+.red {
+    background-color: lightcoral;
+}
+
+.green {
+    background-color: lightgreen;
+}
+
+.blue {
+    background-color: lightskyblue;
+}
+
+.yellow {
+    background-color: lightgoldenrodyellow;
+}
+
+.cyan {
+    background-color: darkturquoise;
+}
+
+.purple {
+    background-color: plum;
+}
+
+.floater-section {
+    float: left;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 20px;
+}
