@@ -1,70 +1,97 @@
-.container{
-    text-align: center;
+table {
+    background: white;
+    width: 350px;
+    border-collapse: separate;
+    margin: auto;
+    height: 250px;
+  }
+  
+
+  table td {
+    background: black;
+    color: white;
+    padding: 20px;
+    border: 10px solid white;
+    border-radius: 10px;
+    /* default is vertical-align: middle; */
+  }
+  
+  .center-table {
+    display: table;
+    height: 250px;
+    background: white;
+    width: 350px;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .center-table p {
+    display: table-cell;
+    margin: 0;
+    background: black;
+    color: white;
+    padding: 20px;
+    border: 10px solid white;
+    border-radius: 10px;
+    vertical-align: middle;
+  }
+
+.floater-section{
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
 }
 
 .content{
-    min-height: 200px;
-    position: relative;
-
-}
-
-#vert_cent1{
-    position: relative;
-    height: 300px;
-}
-
-#vert_cent1 img{
-    display: block;
-    top:50%;
-    margin-top: 100px
-}
-
-p{
-    vertical-align: middle;
+    width: 200px;
     height: 200px;
-    display: table-cell;
-    width:600px;
-    display: inline-block;
-   
-    
-}
-
-#lorem1{
+    padding: 0px;
     position: absolute;
+    margin: -66px 0 0 0px;
+}
+
+#vertCenter1{
+    top: 33%;
+    left: 0%;
+}
+
+#vertCenter2{
+    top: 33%;
+    left: 50%;
+    margin-left: -100px;
+}
+
+#vertCenter3{
+    top: 33%;
+    right: 0%;
+}
+
+.content2{
+    position: absolute;
+}   
+
+#vertCenter4{
     top: 50%;
-    transform: translateY(-50%);
-    margin: 0px; /* margins affect this!! */
+    left: 0%;
+    transform: translate(0, -50%);
 }
 
-
-
-.red {
-    background-color: lightcoral;
+#vertCenter5{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.green {
-    background-color: lightgreen;
+#vertCenter6{
+    top: 50%;
+    right: 0%;
+    transform: translate(0, -50%);
 }
 
-.blue {
-    background-color: lightskyblue;
-}
-
-.yellow {
-    background-color: lightgoldenrodyellow;
-}
-
-.cyan {
-    background-color: darkturquoise;
-}
-
-.purple {
-    background-color: plum;
-}
-
-.floater-section {
-    float: left;
-    width: 100%;
-    min-height: 200px;
-    margin-bottom: 20px;
+h1{
+    text-align: center;
+    color: azure;
+    padding: 30px;
+    background-color: black;
+    border:  solid azure 3px;
+    border-radius: 10px; 
 }
