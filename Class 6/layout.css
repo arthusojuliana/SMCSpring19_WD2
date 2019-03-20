@@ -1,0 +1,111 @@
+.container {
+    margin: auto;
+    background-image: url(https://images.fineartamerica.com/images-medium-large-5/black-and-white-cow-pattern-li-or.jpg);
+    background-size: cover; 
+    background-repeat: repeat-y;
+    
+}
+
+.floater-section {
+    float: left;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 20px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/*************SMALL SCREENS********************/
+@media (min-width: 450px){
+    .container {
+        width: 440px;
+    }
+
+    .small-width-quart {
+        width: 25%;
+    }
+    
+    .small-width-third {
+        width: 33.3333%;
+    }
+    
+    .small-width-half {
+        width: 50%;
+    }
+
+    .small-width-full {
+        width: 100%;
+    }
+}
+
+/*************MEDIUM SCREENS*******************/
+@media (min-width: 768px){
+    .container {
+        width: 760px;
+    }
+
+    .med-width-quart {
+        width: 25%;
+    }
+    
+    .med-width-third {
+        width: 33.3333%;
+    }
+
+    .med-width-half {
+        width: 50%;
+    }
+
+    .med-width-3quart{
+        width: 75%;
+    }
+
+    .med-width-full {
+        width: 100%;
+    }
+}
+
+/*************LARGE SCREENS*******************/
+@media (min-width: 992px){
+    .container {
+        width: 960px;
+    }
+
+    .large-width-fifth{
+        width: 20%;
+    }
+
+    .large-width-2fifth{
+        width: 40%;
+    }
+
+    .large-width_3fifth{
+        width: 60%;
+    }
+
+    .large-width-5fifth{
+        width: 80%;
+    }
+
+    .large-width-quart {
+        width: 25%;
+    }
+    
+    .large-width-third {
+        width: 33.33333%;
+    }
+
+    .large-width-half {
+        width: 50%;
+    }
+
+    .large-width-3quart{
+        width: 75%;
+    }
+
+    .large-width-full {
+        width: 100%;
+    }
+}
