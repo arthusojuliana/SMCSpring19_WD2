@@ -110,7 +110,7 @@ body{
 .floater-section {
     float: left;
     width: 100%;
-    min-height: 200px;
+    min-height: 100px;
     margin-bottom: 20px;
 }
 
@@ -121,16 +121,19 @@ body{
 .content-float-50{
     float: left;
     width: 50%;
+    min-height: 80px;
 }
 
 .relative{
-    position: relative;
-    top: 335px;
+    position: fixed;
+    z-index: 5;
+    top: 515px;
     width: 100%;
-    height: 200px;
-    background-image: linear-gradient( rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.8), rgb(255, 255, 255));
-    
+    min-height: 234px;
+    background-image: linear-gradient( rgba(255, 255, 255, 0.93), rgb(151, 202, 145));
 }
+    
+
 
 /*************SMALL SCREENS********************/
 @media (min-width: 450px){
