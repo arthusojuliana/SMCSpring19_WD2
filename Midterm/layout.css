@@ -10,6 +10,7 @@ nav{
     background-color: white;
     width: 100%;
     height: 85px;
+    top:0;
   
 }
 nav .nav{
@@ -51,7 +52,7 @@ nav .nav{
     .bar{
         width: 35px;
         height: 5px;
-        background-color: #B36A5E;
+        background-color: #640D14;
         margin: 6px 0;
     }
 
@@ -63,7 +64,7 @@ nav .nav{
 
     nav .navbar{
         display: none;
-        background-color: #C89F9C ;
+        background-color: #640D14 ;
         width: 100%;
         padding: 2px 0px;
 
@@ -72,7 +73,7 @@ nav .nav{
     nav .navbar a{
         font-size:22px;
         text-decoration: none; /* how to remove the underline text link */
-        color: #EED7C5;
+        color: #EDDDD4
         line-height: 36px;
         font-family: 'Raleway', sans-serif;
 
@@ -90,7 +91,7 @@ nav .nav{
     }
 
     nav .navbar li{
-        border-bottom: 2px solid #C97C5D;
+        border-bottom: 2px solid #EDDDD4;
     }
 
     nav .navbar li:last-child{
@@ -99,12 +100,12 @@ nav .nav{
 /* END NAVBAR */
 
 body{
-    margin: 0;
+    margin: 0px;
 }
+
 .container {
     margin: auto;
-    position: relative;
-    top: 85px;
+    margin-top:85px;
 }
 
 .floater-section {
@@ -114,6 +115,9 @@ body{
     margin-bottom: 20px;
 }
 
+#no-margin{
+    margin-bottom: 0px;
+}
 .clearfix {
     clear: both;
 }
@@ -121,16 +125,30 @@ body{
 .content-float-50{
     float: left;
     width: 50%;
-    min-height: 80px;
+    min-height: 100px;
 }
 
 .relative{
-    position: fixed;
-    z-index: 5;
-    top: 515px;
+    position: relative;
+    top: 155px;
+    z-index: 1;
     width: 100%;
-    min-height: 234px;
-    background-image: linear-gradient( rgba(255, 255, 255, 0.93), rgb(151, 202, 145));
+    height: 230px;
+    background-image: linear-gradient( rgba(255, 255, 255, 0.93), rgb(49, 92, 43, 1));
+}
+
+.floater-space{
+    height:134px;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #640D14;
+    color: white;
+    text-align: center;
+    padding: 27px 0px 15px;
 }
     
 
