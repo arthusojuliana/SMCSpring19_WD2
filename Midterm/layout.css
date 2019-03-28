@@ -1,9 +1,12 @@
 /*Start Navbar*/
 nav{
-    padding-bottom: 76px;
-    z-index: 3;
-    position: fixed;
-    background-color: white;
+        /* padding-bottom: 76px; */
+        z-index: 7;
+        position: fixed;
+        /* background-color: white; */
+        top: 65px;
+        width: 100%;
+        margin: 0px;
 }
 .navbox{
     position: fixed;
@@ -11,25 +14,35 @@ nav{
     width: 100%;
     height: 85px;
     top:0;
-  
+
 }
-nav .nav{
+nav #nav{
     min-height: 300px;
     background-color: #EEE2DF;
-    z-index: 2;
+    z-index: 7;
     position: fixed;
     
 
 }
-    nav .title{
-        font-size:25px;
-        color: #B36A5E;
-        line-height: 36px;
-        font-family: 'Raleway', sans-serif;
-        position: fixed;
-        top: 23px;
-        left: 25px;
-    }
+.title{
+    font-size:25px;
+    color: #EDDDD4;
+    line-height: 36px;
+    font-family: 'Raleway', sans-serif;
+    position: fixed;
+    top: 23px;
+    left: 25px;
+}
+.box-title{
+    display: block;
+    width: 100%;
+    height: 85px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 7;
+    background-color: white;
+}
     nav .burger{
         display: block;
         position: fixed;
@@ -70,33 +83,74 @@ nav .nav{
 
     }
 
-    nav .navbar a{
+    #nav ul a{
         font-size:22px;
         text-decoration: none; /* how to remove the underline text link */
-        color: #EDDDD4
+        color: #EDDDD4;
         line-height: 36px;
+        display: block;
+        padding: 5px;
         font-family: 'Raleway', sans-serif;
 
 
     }
 
-    nav .navbar li:hover{
-        background-color: #B36A5E;
+
+    #nav li:hover{
+        background-color: #315C2B;
     }
 
-    nav .navbar ul{
+    #nav ul{
         list-style: none;
         padding-left: 0px;
         text-align: center;
+        background-color: #640D14 ;
+        width: 100%;
+        padding: 2px 0px;
+        display: block;
     }
 
-    nav .navbar li{
+    #nav li{
         border-bottom: 2px solid #EDDDD4;
     }
 
-    nav .navbar li:last-child{
+    #nav li:last-child{
         border-bottom: none;
     }
+
+
+
+.show_menu_btn {
+    margin: 0 auto;
+    padding: 11px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    position: fixed;
+    top: 24px;
+    color: #EDDDD4;
+    right: 23px;
+    background-color: #640D14;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    
+  }
+
+  .show_menu_btn text{
+    font-family: 'Raleway', sans-serif;
+    color: #640D14;
+  }
+
+  .no-js .show_menu_btn { display: none; }
+
+  .no-js #nav ul { display: block; }
+  
+  .js .show_menu_btn { display: block; }
+  .js #nav ul { display: none; }
+  
+  }
+
 /* END NAVBAR */
 
 body{

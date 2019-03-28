@@ -16,18 +16,38 @@
 
 
 <body>
-    <nav>
-      <div class="navbox">   
-          <div class="title"><img src="http://www.literaticafe.com/wp-content/themes/literati-cafe/images/logo.png" alt="literati logo" width=85%>
+    <div class="box-title">
+      <div class="title"><img src="http://www.literaticafe.com/wp-content/themes/literati-cafe/images/logo.png"
+      alt="literati logo" width=85%>
+    </div>
+  </div>
+
+  <nav id="nav" role="navigation">
+    
+      <div class="show_menu_btn"
+    
+           data-target="#nav ul"
+    
+           data-shown-text="x"
+    
+           data-hidden-text="Menu">
+    
+           Menu
+    
+      </div>
+    
+     <!-- <div class="navbox">
+        <div class="title"><img src="http://www.literaticafe.com/wp-content/themes/literati-cafe/images/logo.png"
+            alt="literati logo" width=85%>
         </div>
-                
+      
         <a href="#navbar" class="burger">
           <div class="bar"></div>
           <div class="bar"></div>
           <div class="bar"></div>
         </a>
-              
-        <div class="navbar">
+      
+        <div class="navbar"> -->
           <ul>
             <li>
                 <a href="index.html">About</a> 
@@ -40,7 +60,24 @@
             </li>
           </ul>
         </div>
-      </div>      
+      </div> 
+      
+      <script>
+        var show_menu = document.querySelector('.show_menu_btn');
+
+show_menu.addEventListener('click', function(event) {
+    var target = document.querySelector(show_menu.getAttribute('data-target'));
+
+    if (target.style.display == "none") {
+        target.style.display = "block";
+        show_menu.innerHTML = show_menu.getAttribute('data-shown-text');
+
+    } else {
+        target.style.display = "none";
+        show_menu.innerHTML = show_menu.getAttribute('data-hidden-text');
+    }
+});
+      </script>
     </nav> 
                
     <div class="container">
