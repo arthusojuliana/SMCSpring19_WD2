@@ -105,7 +105,7 @@ img {vertical-align: middle;}
 
 h3{
     padding: 22px;
-    padding-bottom: 0px;
+    padding-bottom: 15px;
     padding-top: 8px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
@@ -403,36 +403,9 @@ a.menu{
 
 /*************MEDIUM SCREENS*******************/
 @media (min-width: 768px){
-  .container {
-      width: 760px;
-  }
-
-  .med-width-quart {
-      width: 25%;
-  }
   
-  .med-width-third {
-      width: 33.3333%;
-  }
-
-  .med-width-half {
-      width: 50%;
-  }
-
-  .med-width-3quart{
-      width: 75%;
-  }
-
-  .med-width-full {
-      width: 100%;
-  }
-
   .head-img{
       background-position-y: -241px;
-  }
-
-  .title img{
-      width: 42%;
   }
 
   .contentM{
@@ -465,4 +438,100 @@ a.menu{
   .menu-img-bd, .menu-img-bf, .menu-img-ld{
     min-height: 1180px;
   }
+}
+
+/*************LARGE SCREENS*******************/
+@media (min-width: 992px){
+
+  .show_menu_btn{
+    display: none;
+  }
+
+  nav ul{
+    display: inline-block;
+  }
+
+  .mySlides img{
+    
+  }
+  
+  .slideshow-container{
+    top: -383px;
+  }
+
+  .relative {
+    top: 21px;
+    height: 300px;
+  }
+
+  .floater-space {
+    height: 0px;
+  }
+
+  .button{
+    margin-top:52px;
+    margin-right: 125px;
+  }
+
+  .call-for-action {
+    width: 70%;
+    /* margin-top: 30px; */
+    margin: auto;
+    margin-top: 43px;
+    margin-left: 100px
+}
+
+h3{
+  font-size: 26px;
+  line-height: 40px;
+  }
+
+  .bodycopyp{
+    font-size: 18px;
+  }
+  
+  .footer{
+    margin-top: 60px;
+  }
+
+  .contentM {
+    min-height: 725px;
+    width: 98%;
+    margin-left: 0px;
+}
+
+  .content{
+    width: 98%;
+    margin-right: 0px;
+  }
+
+  .head-imgCAT {
+    background-position-y: center;
+    background-position-x: -130px;
+    height: 630px;
+    margin-bottom: 64px;
+}
+
+#emailB {
+  margin-top: 25px;
+  padding: 24px 76px;
+}
+
+.head-imgEB{
+  background-position-y: -226px;
+}
+
+.head-img, .head-imgEB{
+  height: 250px;
+
+}
+
+.menu-img-bd, .menu-img-bf, .menu-img-ld {
+  min-height: 1439px;
+}
+
+#bd-head {
+  height: 50px;
+}
+
 }

@@ -16,69 +16,100 @@
 
 
 <body>
-    <div class="box-title">
-      <a href="index.html">
-        <div class="title"><img src="http://www.literaticafe.com/wp-content/themes/literati-cafe/images/logo.png"
-      alt="literati logo" width=65%>
-        </div>
-      </a>
-  </div>
-
-  <nav id="nav" role="navigation">
-    
-      <div class="show_menu_btn"
-    
-           data-target="#nav ul"
-    
-           data-shown-text="x"
-    
-           data-hidden-text="Menu">
-    
-           Menu
-    
-      </div>
-    
-          <ul>
-            <li>
-                <a href="index.html">About</a> 
-            </li>                   
-            <li>
-                <a href="https://ordering.chownow.com/order/5084/locations">Order Online</a> 
-            </li>
-            <li>
-                <a href="menu.html">Menu</a> 
-            </li>
-            <li>
-                <a href="event_booking.html">Book an Event</a> 
-            </li>
-          </ul>
-        </div>
-      </div> 
-      
-      <script>
-        var show_menu = document.querySelector('.show_menu_btn');
-
-show_menu.addEventListener('click', function(event) {
-    var target = document.querySelector(show_menu.getAttribute('data-target'));
-
-    if (target.style.display == "none") {
-        target.style.display = "block";
-        show_menu.innerHTML = show_menu.getAttribute('data-shown-text');
-
-    } else {
-        target.style.display = "none";
-        show_menu.innerHTML = show_menu.getAttribute('data-hidden-text');
-    }
-});
-      </script>
-    </nav> 
+        <div class="box-title">
+                <a href="index.html">
+                  <div class="title"><img src="http://www.literaticafe.com/wp-content/themes/literati-cafe/images/logo.png"
+                alt="literati logo" width=250px>
+                  </div>
+                </a>
+            </div>
+          
+            <nav id="nav" role="navigation">
+              
+                <div class="show_menu_btn"
+              
+                     data-target="#nav ul"
+              
+                     data-shown-text="x"
+              
+                     data-hidden-text="Menu">
+              
+                     Menu
+              
+                </div>
+              
+               <!-- <div class="navbox">
+                  <div class="title"><img src="http://www.literaticafe.com/wp-content/themes/literati-cafe/images/logo.png"
+                      alt="literati logo" width=85%>
+                  </div>
+                
+                  <a href="#navbar" class="burger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                  </a>
+                
+                  <div class="navbar"> -->
+                  <div class="hide-large-screen">
+                    <ul>
+                      <li>
+                          <a href="index.html">About</a> 
+                      </li>                   
+                      <li>
+                          <a href="https://ordering.chownow.com/order/5084/locations">Order Online</a> 
+                      </li>
+                      <li>
+                          <a href="menu.html">Menu</a> 
+                      </li>
+                      <li>
+                        <a href="event_booking.html">Book an Event</a> 
+                      </li>
+                    </ul>
+                  </div>
+                  </div>
+                </div> 
+                
+                <script>
+                  var show_menu = document.querySelector('.show_menu_btn');
+          
+          show_menu.addEventListener('click', function(event) {
+              var target = document.querySelector(show_menu.getAttribute('data-target'));
+          
+              if (target.style.display == "none") {
+                  target.style.display = "block";
+                  show_menu.innerHTML = show_menu.getAttribute('data-shown-text');
+          
+              } else {
+                  target.style.display = "none";
+                  show_menu.innerHTML = show_menu.getAttribute('data-hidden-text');
+              }
+          });
+                </script>
+          
+          <div class="show-large-screen">
+              <ul>
+                <li>
+                    <a href="index.html">About</a> 
+                </li>                   
+                <li>
+                    <a href="https://ordering.chownow.com/order/5084/locations">Order Online</a> 
+                </li>
+                <li>
+                    <a href="menu.html">Menu</a> 
+                </li>
+                <li>
+                  <a href="event_booking.html">Book an Event</a> 
+                </li>
+              </ul>
+            </div>
+              </nav> 
    
 <div class="container">
-    <div class="floater-section" id="head-img">
+    <div class="floater-section " id="head-img">
         <div class="head-imgEB"></div>
     </div>
 
-    <div class="floater-section">
+    <div class="floater-section large-width-half">
         <div class="contentM">
             <div class="header">
                 <h1>Indoors + Patio</h1>
@@ -180,7 +211,7 @@ show_menu.addEventListener('click', function(event) {
         
     </div>
 
-    <div class="floater-section">
+    <div class="floater-section large-width-half">
         <div class="content">
             <div class="header">
                 <h1>Catering</h1>

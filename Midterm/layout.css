@@ -1,4 +1,7 @@
 /*Start Navbar*/
+.show-large-screen{
+    display: none;
+}
 nav{
         /* padding-bottom: 76px; */
         z-index: 7;
@@ -238,6 +241,10 @@ body{
     .small-width-full {
         width: 100%;
     }
+
+    .title img{
+        width: 260px
+    }
 }
 
 /*************MEDIUM SCREENS*******************/
@@ -271,7 +278,7 @@ body{
     }
 
     .title img{
-        width: 42%;
+        width: 260px;
     }
 
     .contentM{
@@ -343,4 +350,50 @@ body{
     .large-width-full {
         width: 100%;
     }
+
+
+    .hide-large-screen{
+        display: none;
+    }
+
+    .show-large-screen{
+        display: block;
+        width: 960px;
+        margin: auto
+    }
+
+    #nav li {
+        border-right: 2px solid 
+        #EDDDD4;
+        border-bottom: none;
+        width: 24%;
+        display: inline-block;
+    }
+
+    #nav li:last-child{
+        border-right: none;
+    }
+
+    .title{
+        width: 960px;
+      
+    }
+
+    .title img {
+        width: 320px;
+        position: relative;
+        top: 0;
+        left: 36px;
+       
+    }
+
+    .call-for-actionFLT{
+        float: left;
+        width: 50%;
+    }
+
+    .content-float-50{
+        width: 100%;
+    }
+    
 }
