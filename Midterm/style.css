@@ -247,12 +247,36 @@ a.button{
 
  .head-img{
   background-image: url(https://s3-media4.fl.yelpcdn.com/bphoto/LMGzLN8prB1jF7WoKd7JGw/o.jpg);
-  height: 200px;
-  background-size: 105%;
-  width: 100%;
-  background-position-y: -118px;
-  background-position-x: -9px;
-  filter: brightness(209%) saturate(76%) blur(.8px);
+    height: 200px;
+    background-size: cover;
+    width: 100%;
+    background-position-y: -73px;
+    background-repeat: no-repeat;
+    /* background-position-x: -9px; */
+    filter: brightness(209%) saturate(76%) blur(.8px);
+ }
+
+ .head-imgEB{
+  background-image: url(https://s3-media2.fl.yelpcdn.com/bphoto/mgLK2vqC13zdU4bHYWDozA/o.jpg);
+    height: 200px;
+    background-size: cover;
+    width: 100%;
+    background-position-y: -21px;
+    background-repeat: no-repeat;
+    /* background-position-x: -9px; */
+    filter: blur(.8px);
+ }
+
+ .head-imgCAT{
+  background-image: url(https://s3-media4.fl.yelpcdn.com/bphoto/t6MURXKfPf6cN49Me2Jdvw/o.jpg);
+    height: 276px;
+    background-size: cover;
+    width: 100%;
+    background-position-y: 0;
+    background-repeat: no-repeat;
+    margin-bottom: 29px;
+    /* background-position-x: -9px; */
+    filter: brightness(137%) saturate(76%) blur(0.5px);
  }
 
  #head-img{ 
@@ -262,7 +286,116 @@ a.button{
 
  /* START EVENT BOOKING */
 
- 
+ .slideshow-containerM {
+  min-height: 590px;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: -49px;
+  z-index: 3;
+}
 
+/* Hide the images by default */
+.mySlidesM {
+  display: none;
+}
 
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  padding: 24px 0px;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.93), rgb(49, 92, 43, 1));
+    font-family: 'Raleway', sans-serif;
+    color: #2D3142;
+    font-size: 17px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dotM {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fadeM {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.contentM{
+  width: 100%;
+  min-height: 700px;
+}
+
+.contentP{
+  width: 90%;
+  margin: auto;
+}
+
+#emailB{
+  margin-top: 20px;
+}
 

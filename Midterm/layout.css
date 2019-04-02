@@ -184,6 +184,14 @@ body{
     min-height: 100px;
 }
 
+.content-float-100{
+    float: left;
+    width: 100%;
+    min-height: 100px;
+}
+
+
+
 .relative{
     position: relative;
     top: 155px;
@@ -256,6 +264,27 @@ body{
 
     .med-width-full {
         width: 100%;
+    }
+
+    .title img{
+        width: 42%;
+    }
+
+    .contentM{
+        min-height: 1120px;
+    }
+
+    .head-imgCAT{
+        background-position-y: center;
+        height: 500px; 
+    }
+
+    .button{
+        padding: 22px 55px; 
+    }
+
+    .contentP{
+        width: 80%;
     }
 }
 

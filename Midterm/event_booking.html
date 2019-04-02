@@ -75,7 +75,129 @@ show_menu.addEventListener('click', function(event) {
    
 <div class="container">
     <div class="floater-section" id="head-img">
-        <div class="head-img"></div>
+        <div class="head-imgEB"></div>
+    </div>
+
+    <div class="floater-section">
+        <div class="contentM">
+            <div class="header">
+                <h1>Indoors + Patio</h1>
+
+                <div class="slideshow-containerM">
+
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlidesM fadeM">
+                          <div class="numbertext">1 / 6</div>
+                          <img src="https://s3-media1.fl.yelpcdn.com/bphoto/1xLol7y3VO0sO0jTix26ug/o.jpg" style="width:100%">
+                          <div class="text">You can catch some sunlight from outside...</div>
+                        </div>
+                      
+                        <div class="mySlidesM fadeM">
+                          <div class="numbertext">2 / 6</div>
+                          <img src="https://s3-media1.fl.yelpcdn.com/bphoto/e7FKSusray_67uSbAsDimQ/o.jpg" style="width:100%">
+                          <div class="text">...while having access to an outlet.</div>
+                        </div>
+                      
+                        <div class="mySlidesM fadeM">
+                          <div class="numbertext">3 / 6</div>
+                          <img src="https://s3-media1.fl.yelpcdn.com/bphoto/H_ta08qsYIcF1N-MML0JiA/o.jpg" style="width:100%">
+                          <div class="text">Spacious and hip area</div>
+                        </div>
+
+                        <div class="mySlidesM fadeM">
+                                <div class="numbertext">4 / 6</div>
+                                <img src="https://s3-media4.fl.yelpcdn.com/bphoto/vmR4Th5pTcs4_dyjtiaGFw/o.jpg" style="width:100%">
+                                <div class="text">With creative decor</div>
+                        </div>
+
+                        <div class="mySlidesM fadeM">
+                                <div class="numbertext">5 / 6</div>
+                                <img src="https://s3-media3.fl.yelpcdn.com/bphoto/G-vTXql_yn5WKO-lAPjBkg/o.jpg" style="width:100%">
+                                <div class="text">and comfort garanteed.</div>
+                        </div>
+
+                        <div class="mySlidesM fadeM">
+                                <div class="numbertext">6 / 6</div>
+                                <img src="https://s3-media4.fl.yelpcdn.com/bphoto/UcC7MA2B7GbxUgGWySgGGA/o.jpg" style="width:100%">
+                                <div class="text">Join us in our happy place!</div>
+                        </div>
+                      
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                      </div>
+                      <br>
+                      
+                      <!-- The dots/circles -->
+                      <div style="text-align:center">
+                        <span class="dotM" onclick="currentSlide(1)"></span> 
+                        <span class="dotM" onclick="currentSlide(2)"></span> 
+                        <span class="dotM" onclick="currentSlide(3)"></span> 
+                        <span class="dotM" onclick="currentSlide(4)"></span> 
+                        <span class="dotM" onclick="currentSlide(5)"></span>
+                        <span class="dotM" onclick="currentSlide(6)"></span>  
+                    </div>
+
+                    
+
+                    <script>
+                            var slideIndex = 1;
+                            showSlides(slideIndex);
+                            
+                            function plusSlides(n) {
+                              showSlides(slideIndex += n);
+                            }
+                            
+                            function currentSlide(n) {
+                              showSlides(slideIndex = n);
+                            }
+                            
+                            function showSlides(n) {
+                              var i;
+                              var slides = document.getElementsByClassName("mySlidesM");
+                              var dots = document.getElementsByClassName("dotM");
+                              if (n > slides.length) {slideIndex = 1}    
+                              if (n < 1) {slideIndex = slides.length}
+                              for (i = 0; i < slides.length; i++) {
+                                  slides[i].style.display = "none";  
+                              }
+                              for (i = 0; i < dots.length; i++) {
+                                  dots[i].className = dots[i].className.replace(" active", "");
+                              }
+                              slides[slideIndex-1].style.display = "block";  
+                              dots[slideIndex-1].className += " active";
+                            }
+                            </script>
+            </div>    
+        </div>
+
+        <div class="contentP">
+    
+            <p>Our hip and spacious area is the perfect spot for work and school events, art exhibits and honestly anything else you have in mind! Just reach out to us with your idea and we will give you an estimate.</p>
+           
+            <p>This prime location in the heart of Brentwood, near Santa Monica and Westwood, comes with vallet parking that will be made available to your guests.</p>
+        </div>
+        
+    </div>
+
+    <div class="floater-section">
+        <div class="content">
+            <div class="header">
+                <h1>Catering</h1>
+            </div>
+
+            <div class="head-imgCAT"></div>
+
+        <div class="contentP">
+            <p>We highly recommend choosing from our extensive breakfast, lunch + dinner and/or desserts and pastries menus to make your event complete. Send us an email and we will give you an estimate based on your menu choices and people count</p>
+        </div>
+
+            <div class="content-float-100">
+                    <a class="button" id="emailB" href=" ">Email Us</a>
+                  </div>
+
+    </div>
+        </div>
     </div>
         
     <div class="clearfix"></div>
