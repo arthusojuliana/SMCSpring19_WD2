@@ -266,6 +266,10 @@ body{
         width: 100%;
     }
 
+    .head-img{
+        background-position-y: -241px;
+    }
+
     .title img{
         width: 42%;
     }
@@ -283,8 +287,18 @@ body{
         padding: 22px 55px; 
     }
 
-    .contentP{
-        width: 80%;
+    .bodycopy p, .contentP p{
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .relative{
+        top: 156px;
+    }
+
+    .mySlides{
+        min-height: 680px;
     }
 }
 

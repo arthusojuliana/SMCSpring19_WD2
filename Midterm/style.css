@@ -1,12 +1,33 @@
 
 
+.button{
+  margin: auto;
+  margin-top: -13px;
+  display: block;
+  border: solid #640D14 4px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90px;
+  background-color: #ffffffc7;
+}
+
+a.button{
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #315C2B;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+
 .inteligentsia{
   background-image: url(images/counter-service-offers.png) no-repeat scroll 0 0 transparent;
   float: left;
   min-height: 190px;
 }
 
-{box-sizing: border-box;}
+
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
@@ -98,25 +119,6 @@ a.menu{
 }
 
 
-.button{
-    margin: auto;
-    margin-top: -13px;
-    display: block;
-    border: solid #640D14 4px;
-    padding: 20px;
-    border-radius: 10px;
-    width: 90px;
-    background-color: #ffffffc7;
-}
-
-a.button{
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    color: #315C2B;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 18px;
-}
 
 .mySlides{
   height: 250px;
@@ -399,3 +401,68 @@ a.button{
   margin-top: 20px;
 }
 
+/*************MEDIUM SCREENS*******************/
+@media (min-width: 768px){
+  .container {
+      width: 760px;
+  }
+
+  .med-width-quart {
+      width: 25%;
+  }
+  
+  .med-width-third {
+      width: 33.3333%;
+  }
+
+  .med-width-half {
+      width: 50%;
+  }
+
+  .med-width-3quart{
+      width: 75%;
+  }
+
+  .med-width-full {
+      width: 100%;
+  }
+
+  .head-img{
+      background-position-y: -241px;
+  }
+
+  .title img{
+      width: 42%;
+  }
+
+  .contentM{
+      min-height: 1120px;
+  }
+
+  .head-imgCAT{
+      background-position-y: center;
+      height: 500px; 
+  }
+
+  .button{
+      padding: 22px 55px; 
+  }
+
+  .bodycopy p, .contentP p{
+      width: 90%;
+      margin: auto;
+      margin-top: 20px;
+  }
+
+  .relative{
+      top: 156px;
+  }
+
+  .mySlides{
+      min-height: 680px;
+  }
+
+  .menu-img-bd, .menu-img-bf, .menu-img-ld{
+    min-height: 1180px;
+  }
+}
