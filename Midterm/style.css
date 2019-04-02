@@ -91,14 +91,13 @@ h3{
     font-size: 21px;
 }
 
-a{
+a.menu{
   font-family: 'Raleway', sans-serif;
   font-style: italic;
-}
-
-#menu{
   margin-left: 35px;
 }
+
+
 .button{
     margin: auto;
     margin-top: -13px;
@@ -220,7 +219,7 @@ a.button{
  min-height: 614px;
  background-position: center;
  background-size: contain;
- background-repeat: none;
+ background-repeat: no-repeat;
  margin: 20px auto;
 }
 
@@ -229,7 +228,7 @@ a.button{
   min-height: 614px;
   background-position: center;
   background-size: contain;
-  background-repeat: none;
+  background-repeat: no-repeat;
   margin: 20px auto;
  }
 
@@ -238,10 +237,32 @@ a.button{
   min-height: 614px;
   background-position: center;
   background-size: contain;
-  background-repeat: none;
+  background-repeat: no-repeat;
   margin: 20px auto;
  }
 
  #bd-head{
    height:87px;
  }
+
+ .head-img{
+  background-image: url(https://s3-media4.fl.yelpcdn.com/bphoto/LMGzLN8prB1jF7WoKd7JGw/o.jpg);
+  height: 200px;
+  background-size: 105%;
+  width: 100%;
+  background-position-y: -118px;
+  background-position-x: -9px;
+  filter: brightness(209%) saturate(76%) blur(.8px);
+ }
+
+ #head-img{ 
+   margin-bottom: -20px;
+ }
+
+
+ /* START EVENT BOOKING */
+
+ 
+
+
+
