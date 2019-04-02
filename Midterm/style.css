@@ -91,12 +91,21 @@ h3{
     font-size: 21px;
 }
 
+a{
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+}
+
+#menu{
+  margin-left: 35px;
+}
 .button{
     margin: auto;
     margin-top: -13px;
     display: block;
     border: solid #640D14 4px;
     padding: 20px;
+    border-radius: 10px;
     width: 90px;
     background-color: #ffffffc7;
 }
@@ -128,6 +137,20 @@ a.button{
   font-weight: 500;
 }
 
+#h2-block{
+  display: inline-block;
+  margin-top: 30px;
+}
+
+#italic{
+  display: inline-block;
+  font-style: italic;
+}
+
+#lit{
+  margin-top: -23px;
+  margin-bottom: 25px;
+}
 .bodycopy {
   width: 85%;
   margin: auto;
@@ -189,3 +212,36 @@ a.button{
   width: 60%;
   margin: auto;
 }
+
+/* START MENU */
+
+.menu-img-bf{
+ background-image: url(breakfast.png);
+ min-height: 614px;
+ background-position: center;
+ background-size: contain;
+ background-repeat: none;
+ margin: 20px auto;
+}
+
+.menu-img-ld{
+  background-image: url(lunch_dinner.png);
+  min-height: 614px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: none;
+  margin: 20px auto;
+ }
+
+ .menu-img-bd{
+  background-image: url(beverage_dessert.png);
+  min-height: 614px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: none;
+  margin: 20px auto;
+ }
+
+ #bd-head{
+   height:87px;
+ }
