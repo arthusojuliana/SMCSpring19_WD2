@@ -1,5 +1,18 @@
 
-
+.img_txt h1{
+  font-family: 'Raleway', sans-serif;
+  margin: auto;
+  margin-bottom: -202px;
+  position: relative;
+  padding: 66px 0px;
+  top: -204px;
+  font-size: 61px;
+  display: block;
+  color: #eae1db;
+  font-weight: 400;
+  text-align: center;
+  background-color: rgba(49, 92, 43, 0.33);
+}
 .button{
   margin: auto;
   margin-top: -13px;
@@ -255,7 +268,7 @@ a.menu{
     background-position-y: -73px;
     background-repeat: no-repeat;
     /* background-position-x: -9px; */
-    filter: brightness(209%) saturate(76%) blur(.8px);
+    filter: brightness(209%) saturate(76%) blur(6.8px);
  }
 
  .head-imgEB{
@@ -266,7 +279,7 @@ a.menu{
     background-position-y: -21px;
     background-repeat: no-repeat;
     /* background-position-x: -9px; */
-    filter: blur(.8px);
+    filter: blur(6.8px);
  }
 
  .head-imgCAT{
@@ -460,7 +473,7 @@ a.menu{
   }
 
   .relative {
-    top: 21px;
+    top: 33px;
     height: 300px;
   }
 
@@ -500,7 +513,7 @@ h3{
     margin-left: 0px;
 }
 
-  .content{
+  .contentR{
     width: 98%;
     margin-right: 0px;
   }
