@@ -1,0 +1,31 @@
+button {
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    background-color: rgb(192, 123, 152);
+    font-family: 'Raleway';
+    font-weight: 800;
+    display: inline-block;
+    font-size: 27px;
+    color: rgb(255, 228, 239);
+    margin: 10%;
+}
+
+.main{
+    width: 95%;
+    margin: auto;
+}
+
+.buttons{
+    width: 100%;
+    margin: auto;
+    margin-left: 10%;
+}
+
+h1{
+    text-align: left;
+    margin: 70px 10% auto;
+    font-family: 'Raleway';
+    color: rgb(192, 123, 152);
+    font-size: 40px;
+}
