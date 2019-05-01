@@ -30,7 +30,7 @@
         <button id="triggerButton4">All liars! Click here</button>
     </div>
 
-    <h2>Today's number is: <span id="numberBox"></span></h2>
+    <span id="numberBox"></span>
    </div>
     <script>
         
@@ -58,11 +58,58 @@
             mainBody.style.backgroundColor=textColor;
         }
 
+
         var myButton=document.getElementById("triggerButton");
 
         myButton.addEventListener("click", changeBackground);
 
+
+
+
+
+        var myButton2=document.getElementById("triggerButton2");
+
+        myButton2.addEventListener("click", confirm);{
+        var confirm
+            if (confirm("Nothing to see here.")){
+                txt = "Duh";
+            }
+            else{
+                txt = "heheh";
+            }
+        }
+
+        
+
+        
+
+        var myButton3=document.getElementById("triggerButton3");
+
+        myButton3.addEventListener("click", changeBackground);
+
+
+        var changeBackground=function(){
+            var redColor=Math.random()*255;
+            var greenColor=Math.random()*255;
+            var blueColor=Math.random()*255;
+
+            var textColor="rgb("+redColor+","+greenColor+","+blueColor+")";
+            console.log(textColor);
     
+
+            var subHeader=numberSpan.parentElement;
+
+        //subHeader.style.color=textColor;
+
+            var body=document.getElementById("mainBody");
+
+            mainBody.style.backgroundColor=textColor;
+        }
+
+        var myButton4=document.getElementById("triggerButton4");
+
+        myButton4.addEventListener("click", changeBackground);
+
 
     </script>
 
