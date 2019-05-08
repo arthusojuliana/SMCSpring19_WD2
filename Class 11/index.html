@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript 2</title>
+
+    <style>
+        #Logo{
+            width: 150px;
+        }
+
+        button{
+            background-color: blueviolet;
+            border: solid black;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <img id="Logo" src="https://www.freelogodesign.org/Content/img/logo-ex-7.png" alt="Brand logo">
+    </header>
+
+    <main>
+        <div class="buttons">
+            <button id="logoSwitch" role="button">Switch the Logo!</button>
+        </div>
+
+    </main>
+
+    <footer></footer>
+
+    <script>
+        
+        var switchLogo = function(){
+            var imgCurrentSrc = document.getElementById('Logo').src;
+
+            var src1 = 'https://www.freelogodesign.org/Content/img/logo-ex-7.png';
+            var src2 = 'http://clipart-library.com/img1/766187.jpg';
+
+            if(imgCurrentSrc === src1){
+                document.getElementById('Logo').src = src2;
+                console.log(imgCurrentSrc);
+            
+            }
+            else{
+                document.getElementById('Logo').src = src1;
+            }
+
+
+
+
+        }
+
+        document.getElementById('logoSwitch').addEventListener('click', switchLogo);
+    </script>
+
+</body>
+</html>
