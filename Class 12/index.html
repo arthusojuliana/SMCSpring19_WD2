@@ -13,61 +13,62 @@
     </header>
 
     <main>
-        <h1>Which car would you like to test:</h1>
+        <h1>Which food would you like to eat:</h1>
 
         <form action="" method="POST">
-            <label for="carMake">Car Make:</label>
+            <label for="foodType">Food Type</label>
 
-            <select name="make" id="carMake">
+            <select name="type" id="foodType">
                 <option>Please select:</option>
-                <option value="audi">Audi</option>
-                <option value="bmw">BMW</option>
-                <option value="merc">Mercedez</option>
-                <option value="porsche">Porsche</option>
+                <option value="thai">Thai</option>
+                <option value="sushi">Sushi</option>
+                <option value="ital">Italian</option>
+                <option value="chine">Chinese</option>
             </select>
 
-            <label for="carModel">Model</label>
-            <select name="model" id="carModel"></select>
+            <label for="foodOption">Option</label>
+            <select name="option" id="foodOption"></select>
         </form>
 
     </main>
 
 
     <script>
-        var audiModels      = ["S3", "S5", "S7"];
-        var bmwModels       = ["Series-3", "Series-4", "Series-5", "Series-7"];
-        var mercModels      = ["C-class", "E-class", "S-class"];
-        var porscheModels   = ["911", "Macan", "Panamera", "Cayenne"];
+        var thaiOptions      = ["Pad Thai", "Pad Se Ew", "Fried Rice"];
+        var sushiOptions       = ["California Roll", "Salmon Avocado Roll", "Toro Nigiri", "Uni Nigiri"];
+        var italOptions      = ["Spaghetti", "Lasagna", "Risotto"];
+        var chineOptions   = ["Dumplings", "Chop Suey", "Orange Chicken"];
 
-        var makeDropdown = document.getElementById("carMake");
-        var modelDropdown = document.getElementById("carModel");
+        var makeDropdown = document.getElementById("foodType");
+        var modelDropdown = document.getElementById("foodOption");
         makeDropdown.addEventListener("change", function(){
             console.log(this.value);
 
             modelDropdown.innerHTML = "";
 
-            if(this.value === "audi"){
-                for(var i = 0; i < audiModels.length; i++){
-                    modelDropdown.innerHTML += '<option value="' + audiModels[i] + '">' + audiModels[i] + '</option>'; 
+            if(this.value === "thai"){
+                for(var i = 0; i < thaiOptions.length; i++){
+                    modelDropdown.innerHTML += '<option value="' + thaiOptions[i] + '">' + thaiOptions[i] + '</option>'; 
                 }
             }
 
-            else if(this.value === 'bmw'){
-                for(var i = 0; i < bmwModels.length; i++){
-                    modelDropdown.innerHTML += '<option value="' + bmwModels[i] + '">' + bmwModels[i] + '</option>';
+            else if(this.value === 'sushi'){
+                for(var i = 0; i < sushiOptions.length; i++){
+                    modelDropdown.innerHTML += '<option value="' + sushiOptions[i] + '">' + sushiOptions[i] + '</option>';
                 }
             }
 
-            else if(this.value === 'merc'){
-                for(var i = 0; i < mercModels.length; i++){
-                 modelDropdown.innerHTML += '<option value="' + mercModels[i] + '">' + mercModels[i] + '</option>';}
+            else if(this.value === 'ital'){
+                for(var i = 0; i < italOptions.length; i++){
+                 modelDropdown.innerHTML += '<option value="' + italOptions[i] + '">' + italOptions[i] + '</option>';}
             }
 
-            else if(this.value === 'porsche'){
-                for(var i = 0; i < porscheModels.length; i++){
-                modelDropdown.innerHTML += '<option value="' + porscheModels[i] + '">' + porscheModels[i] + '</option>';
+            else if(this.value === 'chine'){
+                for(var i = 0; i < chineOptions.length; i++){
+                modelDropdown.innerHTML += '<option value="' + chineOptions[i] + '">' + chineOptions[i] + '</option>';
                 }
             }
+
 
             // <option value="">Text</option>
             // i++ is a shorthand for i+1
