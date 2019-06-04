@@ -1,0 +1,46 @@
+body{
+    margin: 0px;
+}
+
+nav{
+    background-color: goldenrod;
+
+}
+
+ul{
+    padding-left: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+li{
+    margin: 5px 10px;
+    color: bisque;
+    background-color: darkcyan;
+}
+
+li#gumball{
+    order: 0;
+    flex-grow: 2;
+}
+
+@media(min-width: 768px){
+    ul{
+        flex-direction: row;
+    }
+
+    li#gumball{
+        order: 5;
+    }
+
+    li:nth-child(2){
+        order: 3;
+    }
+
+    li:nth-child(1){
+        order: 4;
+    }
+}

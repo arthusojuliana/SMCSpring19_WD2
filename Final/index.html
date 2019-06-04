@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Saving Wildlife International</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="layout.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+        <script src="main.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Raleway:500,700,800" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+    </head>
+
+
+<body>
+
+
+    <header>
+       <nav> 
+        <div class="navblock">
+            <img id="logo" src="http://d3n8a8pro7vhmx.cloudfront.net/themes/525ef5b21ad07a7b89000002/attachments/original/1384219257/SWI-logo5.png?1384219257>" alt="logo">
+            <button id="wrapper">
+                <div class="circle icon">
+                    <span class="line top"></span>                     <span class="line middle"></span>
+                    <span class="line bottom"></span>
+                </div>
+                </button>
+        </div>
+            <div class="navbar">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Donations</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="clearfix"></div>
+    
+    <main>
+        <div class="container">
+            <div class="floater_spacer"></div>
+            <div class="call_action_box">
+                <div class="headline">
+                    <h3>A commitment to wildlife</h3>
+                </div>    
+                <div class="infobox">
+                    <p>Since April 2000, Saving Wildlife International (SWI) has enthusiastically shared its commitment to wildlife conservation with diverse audiences ranging from school classrooms to national television. Well on its way to becoming a nationally recognized wildlife organization, SWI is proud to provide displaced animals with a purpose and permanent home.</p>
+                </div>
+            </div>
+
+            <div class="call_action_box" id="action2">
+                    <div class="headline">
+                        <h3>Join Our Cause</h3>
+                        <div class="button">
+                            <button>Donate here</button>
+                        </div>
+                    </div>    
+                    <div class="infobox">
+                        <p>To make long term changes for wildlife and our environment, every individual must take personal responsibility for their actions. Here is a short list of some things you can do to help.</p>
+                    </div>
+                </div>
+
+                <div class="call_action_box" id="action3">
+                        <div class="headline">
+                            <h3>SWI's Ambassadors</h3>
+                        </div>    
+                        <div class="infobox">
+                            <p>SWI's animals come to us in a myriad of ways. Whether confiscated by the US government or discarded "exotic pets" proven too difficult to maintain, their lives can be spared acting as ambassadors for their species. Unfortunately, there are many more wild animals in need of good homes. It is our hope that once we have a permanent facility we can give even more displaced animals a caring home and meaningful life.</p>
+                        </div>
+                    </div>
+        </div>
+        <div class="header_spacer"></div>
+        <div class="background_image b1"></div>
+        <div class="background_image b2"></div>
+        <div class="background_image b4"></div>
+        <div class="background_image b3">
+            <img src="https://d3n8a8pro7vhmx.cloudfront.net/swi/pages/18/attachments/original/1392921618/SWI_Zuma-the-ocelot-thumb.jpg?1392921618" alt="cat">
+
+            <img src="https://d3n8a8pro7vhmx.cloudfront.net/swi/pages/18/attachments/original/1392921616/SWI_Quigley-the-blue-tongue-skink-thumb.jpg?1392921616" alt="reptile">
+
+            <img src="https://d3n8a8pro7vhmx.cloudfront.net/swi/pages/18/attachments/original/1392921614/SWI_Brandon-the-African-Pied-Crow-thumb.jpg?1392921614" alt="crow">
+
+            <img src="https://d3n8a8pro7vhmx.cloudfront.net/swi/pages/18/attachments/original/1392921617/SWI_Boo-the-lemur-thumb.jpg?1392921617" alt="monkey">
+
+            <img src="https://d3n8a8pro7vhmx.cloudfront.net/swi/pages/18/attachments/original/1392921615/SWI_Figgy-the-Guyana-Toucanet-thumb.jpg?1392921615" alt="bird">
+
+            <img src="https://d3n8a8pro7vhmx.cloudfront.net/swi/pages/18/attachments/original/1392921613/SWI_Macho-the-Penicillata-Marmoset-thumb.jpg?1392921613" alt="other monkey">
+        </div>
+    
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        
+
+    <script type="text/javascript">
+        $("#wrapper").click( function() {
+            $(".icon").toggleClass("close");
+        });
+        
+        $(function() {
+        $("#wrapper").click(function () {
+        $(".navbar").toggle(200);
+        $(".header_spacer").toggle(200);
+        $(".floater_spacer").toggle(200);
+    });
+});
+
+$(document).ready(function(){
+    $(".b1").scroll().delay(4000);
+    $(".b2").scroll().delay(4000);
+    $(".b3").scroll().delay(4000);
+    $(".b4").scroll().delay(4000);
+    $(".b5").scroll().delay(4000);
+    $(".container").scroll().delay(100);
+
+    
+
+});
+    </script>
+</body>
+</html>

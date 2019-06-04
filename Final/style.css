@@ -1,0 +1,264 @@
+
+body{
+    width: 100%;
+    margin: auto;
+    background-color: #C5EBC3;
+}
+
+h3,p{
+    color: #354F52;
+}
+
+/* START NAV BAR */
+
+.navblock{
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #7CC19B;
+    border-bottom: solid 1px red;
+    border-bottom-style: solid;
+    box-shadow: 1px 5px 11px rgba(0, 0, 0, 0.3);
+}
+    /* START NAV BUTTON */
+    #wrapper {
+        background: none;
+        display: inline-block;
+        border-radius: 300px;
+        border: none;
+        margin: 10px;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        /* height: 15px; */
+        /* padding: 50px; */
+        cursor: pointer;
+    }
+    .circle {
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        top: 30px;
+        right: 45px;
+    }
+    .line {
+        position: absolute;
+        height: 8px;
+        width:100%;
+        background: red;
+        border-radius:8px;
+        transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;
+    }
+    .top {
+        top:18%;
+    }
+    .middle {
+        top:48%;
+    }
+    .bottom {
+        top:78%;
+    }
+    .icon.close .top {
+        transform:rotate(45deg);
+        top:48%;
+    }
+    .icon.close .middle, .icon.close .bottom {
+        transform:rotate(-45deg);
+        top:48%;
+    }
+    /*END NAV BUTTON */
+
+    /*START NAVBAR*/
+    .navbar{
+        background-color: #7CC19B;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: fixed;
+        top: 100px;
+        min-height: 150px;
+        margin-bottom: 50px;
+        box-shadow: 1px 5px 11px rgba(0, 0, 0, 0.3);
+    }
+
+    .navbar ul{
+        text-decoration: none;
+        padding-inline-start: 0px;
+        margin: 0px auto;
+    }
+    .navbar li{
+        text-align: center;
+    margin: auto;
+    text-decoration: none;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    padding: 18px;
+    font-weight: 800;
+    color: #354F52;
+    border-bottom: solid 1px #C5EBC3;
+    }
+
+    .navbar li:first-child{
+        border-top: solid 1px #C5EBC3;
+    }
+
+
+    /*END NAVBAR*/
+
+    #logo{
+        position: fixed;
+        top: 17px;
+        left: 5px;
+        width: 171px;
+        height: auto;
+    }
+
+/* END NAV BAR*/
+
+/* START MAIN */
+    /*FLOATERS*/
+        .container{
+            float: left;
+            width: 100%;
+            min-height: 300px;
+        }
+
+        .floater_spacer{
+            height: 340px;
+            display: none;
+            float: left;
+            width: 100%;
+        }
+
+        .call_action_box{
+            float: left;
+            background-color: rgba(233, 234, 235, 0.55);
+        }
+
+        .call_action_box button{
+            background-color: #DB995A;
+            height: 100px;
+            min-width: 100px;
+            border: none;
+            border-radius: 10px;
+            margin: auto;
+            font-family: 'Karla', sans-serif;
+            font-size: 33px;
+            padding: 30px;
+            color: #C5EBC3;
+
+        }
+
+
+        .headline{
+            min-height: 200px;
+            width: 100%;
+
+        }
+
+        #action2{
+            background-color: rgba(233, 234, 235, .75);
+        }
+        .call_action_box h3{
+            font-family: 'Karla', sans-serif;
+            font-size: 41px;
+            width: 80%;
+            font-weight: 900;
+            text-align: center;
+            margin: 37px auto 52px;
+        }
+
+        #action2 h3{
+            margin: 89px auto 60px;
+        }
+
+        #action3 h3{
+            margin: 52px auto -84px;
+        }
+
+        #action3{
+            background-color: rgba(233, 234, 235, .75);
+        }
+
+        .infobox{
+            background-color: #C5EBC3;
+            margin: auto;
+            width: 100%;
+            min-height: 100px;
+            box-shadow: 1px 10px 14px rgba(0, 0, 0, 0.3);
+        }
+
+        .infobox p{
+            width: 75%;
+            margin: auto;
+            padding: 25px 0px;
+            font-family: 'Karla', sans-serif;
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        .button{
+            width: 100%;
+            float: left;
+            text-align: center;
+        }
+    /* FIXED IMAGES */    
+        .header_spacer{
+            height: 230px;
+            display: none;
+        }
+        .background_image{
+            background-position: center;
+            background-size: cover;
+            min-width: 100%;
+            min-height: 400px;
+            position: unset;
+        }
+
+        .b1{
+            background-image: url(https://wihumane.blob.core.windows.net/production//Wildlife/main%20-%20ruby%20throats.jpg);
+            margin-top: 100px;
+        }
+
+        .b2{
+            background-image: url(https://www.trbimg.com/img-5c805002/turbine/ct-ae-wildlife-photographer-mangelsen-0310); 
+            min-height: 500px;
+            margin-top: 116px;
+        }
+
+        .b3{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgba(233, 234, 235, .3);
+            z-index: 0;
+            
+        }
+
+        .b3 img{
+            width: 50%;
+            min-height: 50%;
+            z-index: -1;
+        }
+
+        .b4{
+            background-image: url(https://www.massaudubon.org/var/ezdemo_site/storage/images/media/departments/lww/mammals/images/raccoons/raccoons-c-kim-nagy-1000/161187-4-eng-US/raccoons-c-kim-nagy-1000_bannerbackground.jpg); 
+            min-height: 278px;
+            margin-top: 89px;
+        }
+
+        .b5{
+            background-image: url(https://www.trbimg.com/img-5c805002/turbine/ct-ae-wildlife-photographer-mangelsen-0310); 
+            
+        }
+/* END MAIN */
+
+/* START FOOTER */
+
+    footer{
+        height: 200px;
+        position: relative;
+        bottom: 0px;
+        background-color: #7CC19B;
+    }
+/* END FOOTER */
