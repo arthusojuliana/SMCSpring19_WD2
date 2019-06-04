@@ -7,6 +7,7 @@ body{
 
 h3,p{
     color: #354F52;
+    font-family: 'Karla', sans-serif;
 }
 
 /* START NAV BAR */
@@ -136,6 +137,8 @@ h3,p{
             background-color: rgba(233, 234, 235, 0.55);
         }
 
+
+
         .call_action_box button{
             background-color: #DB995A;
             height: 100px;
@@ -260,5 +263,30 @@ h3,p{
         position: relative;
         bottom: 0px;
         background-color: #7CC19B;
+    }
+
+    footer button{
+        background-color: #DB995A;
+    min-height: 23px;
+    min-width: 130px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    padding: 19px;
+    color: #C5EBC3;
+    }
+
+    .buttons{
+        float: left;
+    width: 100%;
+    text-align: center;
+    margin: 35px auto 0px;
+    }
+
+    .buttons p{
+        width: 75%;
+        margin: 20px auto;
     }
 /* END FOOTER */
