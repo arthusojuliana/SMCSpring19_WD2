@@ -107,6 +107,10 @@ a {
     border-bottom: solid 1px #C5EBC3;
     }
 
+    .navbar li a:hover{
+        color: #C5EBC3;
+    }
+
     .navbar li a{
         color: #354F52;
     }
