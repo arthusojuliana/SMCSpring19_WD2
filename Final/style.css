@@ -5,9 +5,15 @@ body{
     background-color: #C5EBC3;
 }
 
-h3,p{
+h2,h3,p{
     color: #354F52;
     font-family: 'Karla', sans-serif;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #C5EBC3;
 }
 
 /* START NAV BAR */
@@ -21,6 +27,7 @@ h3,p{
     border-bottom: solid 1px red;
     border-bottom-style: solid;
     box-shadow: 1px 5px 11px rgba(0, 0, 0, 0.3);
+    z-index: 3;
 }
     /* START NAV BUTTON */
     #wrapper {
@@ -100,6 +107,10 @@ h3,p{
     border-bottom: solid 1px #C5EBC3;
     }
 
+    .navbar li a{
+        color: #354F52;
+    }
+
     .navbar li:first-child{
         border-top: solid 1px #C5EBC3;
     }
@@ -162,6 +173,7 @@ h3,p{
 
         #action2{
             background-color: rgba(233, 234, 235, .75);
+            width:100%
         }
         .call_action_box h3{
             font-family: 'Karla', sans-serif;
@@ -178,6 +190,15 @@ h3,p{
 
         #action3 h3{
             margin: 52px auto -84px;
+        }
+
+        #action4 h3{
+            margin: 134px auto -63px;
+        }
+
+        #action5 h3{
+            margin:146px auto -116px;
+
         }
 
         #action3{
@@ -240,7 +261,7 @@ h3,p{
 
         .b3 img{
             width: 50%;
-            min-height: 50%;
+            height: 50%;
             z-index: -1;
         }
 
@@ -253,6 +274,22 @@ h3,p{
         .b5{
             background-image: url(https://www.trbimg.com/img-5c805002/turbine/ct-ae-wildlife-photographer-mangelsen-0310); 
             
+        }
+
+        .b6{
+            background-image: url(https://img.purch.com/h/1000/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzEwNC83NzQvb3JpZ2luYWwvc2h1dHRlcnN0b2NrXzM4MzMwMzc1OC5qcGc=);
+        }
+
+        .b7{
+            background-image: url(https://img.purch.com/h/1000/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzAzNi85ODgvb3JpZ2luYWwvZWxlcGhhbnRzLmpwZw==)
+        }
+
+        #fixB2{
+            margin-top:495px; 
+        }
+
+        .b8{
+            background-image: url(https://i1.wp.com/www.whats-your-sign.com/wp-content/uploads/2018/01/AnimalSymbolismSquirrel1.jpg?fit=1600%2C1068&ssl=1);
         }
 /* END MAIN */
 
@@ -287,6 +324,549 @@ h3,p{
 
     .buttons p{
         width: 75%;
-        margin: 20px auto;
+        margin: 10px auto 0px;
     }
+
+
 /* END FOOTER */
+
+
+/* START ABOUT */
+
+/* START BLOG */
+
+#blog_desc{
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+    background-color: #6290C3;
+}
+
+#blog_desc h2{
+    margin: auto;
+    width: 75%;
+    padding-top: 20px;
+    color: #C5EBC3;
+    font-size: 30px;
+}
+
+#blog_desc p{
+    color: #C5EBC3;
+}
+.blog_img{
+    width: 100%;
+    margin: 1px auto;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+}
+
+#img1{
+    background-image: url(https://d3n8a8pro7vhmx.cloudfront.net/swi/pages/19/attachments/original/1389919139/SWI_classroom.jpg?1389919139);
+}
+
+#img2{
+    background-image: url(https://d3n8a8pro7vhmx.cloudfront.net/swi/pages/27/attachments/original/1389995958/international1.jpg?1389995958);
+}
+
+#img3{
+    background-image: url(https://d3n8a8pro7vhmx.cloudfront.net/swi/pages/20/attachments/original/1385162545/SWI-show.jpg?1385162545);
+    background-position-y: top;
+}
+
+#fixB2blog{
+    top: 1994px;
+    position: relative;
+    z-index: -1;
+}
+
+#action6{
+    padding-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+/********LAYOUT TIME, MA DUDES********/
+
+.container {
+    margin: auto;
+}
+
+.floater-section {
+    float: left;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 20px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/*************SMALL SCREENS********************/
+@media (min-width: 450px){
+    .container {
+        width: 100%;
+    }
+
+    .small-width-quart {
+        width: 25%;
+    }
+    
+    .small-width-third {
+        width: 33.3333%;
+    }
+    
+    .small-width-half {
+        width: 50%;
+    }
+
+    .small-width-full {
+        width: 100%;
+    }
+
+    #blog_img {
+        width: 48%;
+        margin: 20px 5px;
+        min-height: 140px;
+        background-image: url(https://d3n8a8pro7vhmx.cloudfront.net/swi/pages/19/attachments/original/1389919139/SWI_classroom.jpg?1389919139);
+        background-position: center;
+        background-size: cover;
+    }
+
+    #fixB2 {
+        margin-top: 266px;
+        position: relative;
+        z-index: -1;
+        height: 604px;
+    }
+
+    #fixB2blog {
+        top: 1590px;
+        position: relative;
+        z-index: -1;
+        height: 600px;
+    }
+}
+
+/*************MEDIUM SCREENS*******************/
+@media (min-width: 768px){
+    .container {
+        width: 100%;
+    }
+
+    .med-width-quart {
+        width: 25%;
+    }
+    
+    .med-width-third {
+        width: 33.3333%;
+    }
+
+    .med-width-half {
+        width: 50%;
+    }
+
+    .med-width-3quart{
+        width: 75%;
+    }
+
+    .med-width-full {
+        width: 100%;
+    }
+
+    .b2 {
+        background-image: url(https://www.trbimg.com/img-5c805002/turbine/ct-ae-wildlife-photographer-mangelsen-0310);
+        min-height: 500px;
+        margin-top: 9px;
+    }
+
+    .b4{
+        min-height: 300px;
+        margin-top: -84px;
+    }
+
+    .b3 img {
+        width: 33.33%;
+        height: 33.33%;
+        z-index: -1;
+    }
+
+    #fixB2 {
+        margin-top: 95px;
+        position: relative;
+        z-index: -1;
+        min-height: 550px;
+    }
+}
+
+#logo {
+    display: block;
+    margin: auto;
+    width: 220px;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    margin-left: -110px;
+}
+
+
+/*************LARGE SCREENS*******************/
+@media (min-width: 992px){
+    .container {
+        width: 960px;
+    }
+
+    .large-width-fifth{
+        width: 20%;
+    }
+
+    .large-width-2fifth{
+        width: 40%;
+    }
+
+    .large-width_3fifth{
+        width: 60%;
+    }
+
+    .large-width-5fifth{
+        width: 80%;
+    }
+
+    .large-width-quart {
+        width: 25%;
+    }
+    
+    .large-width-third {
+        width: 33.33333%;
+    }
+
+    .large-width-half {
+        width: 50%;
+    }
+
+    .large-width-3quart{
+        width: 75%;
+    }
+
+    .large-width-full {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+/****** EXILLED ******/
+
+/* DONATIONS */
+#donationBox h3{
+    margin:141px auto -50px;
+}
+
+#donationSpacer{
+    height: 225px;
+}
+
+.donation-container {
+	height: 388px;
+	font-family: 'Karla', sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	text-transform: uppercase;
+    
+}
+
+.donation-box {
+	width: 375px;
+	height: 386px;
+	background-color: #6290C3;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	position: relative;
+	margin-left: auto;
+    margin-right: auto;
+    z-index: 0;
+	
+	-webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
+	-o-transition: all 0.15s ease-out;
+	transition: all 0.15s ease-out;
+}
+
+.donation-box .title {
+	background-color: #DB995A;
+	width: 100%;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	color: white;
+	text-align: center;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	font-size: 15px;
+}
+
+.donation-box .donate-button {
+	background-color: #DB995A;
+	width: 100%;
+	color: white;
+	text-align: center;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	font-size: 18px;
+	bottom: 0px;
+	position: absolute;
+	cursor: pointer;
+	font-weight: 800;
+}
+
+.donation-box .fields {
+	width: 59%;
+	display: block;
+	position: absolute;
+	top: 60px;
+	left: 15px;
+}
+
+.donation-box .fields input {
+	width: 90%;
+	font-size: 17px;
+	padding: 10px;
+	border-radius: 4px;
+	border-width: 0px;
+	color: #7CC19B;
+	font-family: 'Karla', sans-serif;
+	font-weight: 500;
+	margin-bottom: 10px;
+	-webkit-font-smoothing: antialiased;
+}
+
+::-webkit-input-placeholder {
+   color: #cdcdcd;
+   font-size: 15px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #cdcdcd;
+   font-size: 15px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #cdcdcd;
+   font-size: 15px; 
+}
+
+:-ms-input-placeholder {  
+   color: #cdcdcd;
+   font-size: 15px;
+}
+
+.donation-box .amount {
+	width: 30%;
+	display: block;
+	position: absolute;
+	top: 60px;
+	right: 15px;
+}
+
+.donation-box .amount .button {
+	width: 100%;
+	background-color: gray;
+	margin-bottom: 10px;
+	text-align: center;
+	color: white;
+	padding: 15px 0px 15px 0px;
+	border-radius: 4px;
+	font-size: 20px;
+	cursor: pointer;
+	
+	-webkit-transition: 400ms background-color;
+	-moz-transition: 800ms opacity, 800ms right;
+	-ms-transition: 800ms opacity, 800ms right;
+	-o-transition: 800ms opacity, 800ms right;
+	transition: 200ms background-color;
+}
+
+.donation-box .amount .button:hover {
+	background-color: #393939;
+}
+
+.donation-box .amount .button.selected {
+	background-color: #393939;
+}
+
+.donation-box .amount .button input {
+	min-width: 34px;
+	font-size: 20px;
+	font-weight: 500;
+	border: none;
+	background-color: transparent;
+	color: white;
+	font-family: Montserrat, sans-serif;
+	font-size: 20px;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	border-bottom: 2px dashed white;
+	-webkit-font-smoothing: antialiased;
+	
+	-webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
+	-o-transition: all 0.15s ease-out;
+	transition: all 0.15s ease-out;
+}
+
+.set-amount {
+	max-width: 96px;
+}
+
+.switch {
+  position: absolute;
+  top: 190px;
+  left: 15px;
+  margin: 20px auto;
+  height: 26px;
+  width: 58.5%;
+  background: white;
+  border-radius: 3px;
+}
+
+.switch-label {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 49%;
+  line-height: 26px;
+  font-size: 11px;
+  color: #7CC19B;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+.switch-label:active {
+  font-weight: bold;
+}
+
+.switch-label-off {
+  padding-left: 2px;
+}
+
+.switch-label-on {
+  padding-right: 2px;
+}
+
+.switch-input {
+  display: none;
+}
+.switch-input:checked + .switch-label {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.65);
+  
+  -webkit-transition: 0.15s ease-out;
+  -moz-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+}
+.switch-input:checked + .switch-label-on ~ .switch-selection {
+  left: 114px;
+}
+
+.switch-selection {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 2px;
+  left: 2px;
+  width: 49%;
+  height: 22px;
+  background: #65bd63;
+  border-radius: 3px;
+  background-color: #7CC19B;
+  
+  -webkit-transition: left 0.15s ease-out;
+  -moz-transition: left 0.15s ease-out;
+  -o-transition: left 0.15s ease-out;
+  transition: left 0.15s ease-out;
+}
+
+.checkboxes {
+	position: absolute;
+	top: 242px;
+	left: 13px;
+}
+
+.checkboxes label {
+	position: relative;
+	top: -8px;
+	font-size: 13px;
+	color:#354F52
+
+.checkbox {
+	-webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #7CC19B;
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+  outline: none;
+	
+	-webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
+	-o-transition: all 0.15s ease-out;
+	transition: all 0.15s ease-out;
+}
+
+.checkbox:active, .checkbox:checked:active {
+	
+}
+
+.checkbox:checked {
+	background-color: #7CC19B;
+	border: 1px solid #7CC19B;
+	color: white;
+}
+
+.checkbox:checked:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: white;
+}
+
+.confirm {
+	display: none;
+	position: absolute;
+	top: 335px;
+	left: 15px;
+	right: 15px;
+	font-size: 16px;
+	
+	-webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
+	-o-transition: all 0.15s ease-out;
+	transition: all 0.15s ease-out;
+}
+
+.confirm i {
+	font-weight: bold;
+	text-decoration: underline;
+	font-style: normal;
+}
+
+#i2{
+    width: 75%;
+}
