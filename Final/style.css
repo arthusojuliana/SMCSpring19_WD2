@@ -2,7 +2,7 @@
 body{
     width: 100%;
     margin: auto;
-    background-color: #C5EBC3;
+    background-color: #7CC19B;
 }
 
 h2,h3,p{
@@ -171,13 +171,18 @@ a {
 
         }
 
-        #action2{
+        #action2,#action22{
             background-color: rgba(233, 234, 235, .75);
             width:100%
         }
+
+        #action22{
+            min-height: 374px;
+        }
+        
         .call_action_box h3{
             font-family: 'Karla', sans-serif;
-            font-size: 41px;
+            font-size: 50px;
             width: 80%;
             font-weight: 900;
             text-align: center;
@@ -201,6 +206,10 @@ a {
 
         }
 
+        #action5{
+            width: 100%;
+            float: left;
+        }
         #action3{
             background-color: rgba(233, 234, 235, .75);
         }
@@ -295,12 +304,14 @@ a {
 
 /* START FOOTER */
 
-    footer{
-        height: 200px;
-        position: relative;
-        bottom: 0px;
-        background-color: #7CC19B;
-    }
+footer {
+    height: 200px;
+    position: relative;
+    bottom: 0px;
+    background-color: #7CC19B;
+    border-top: solid red 1px;
+    box-shadow: 1px 5px 11px;
+}
 
     footer button{
         background-color: #DB995A;
@@ -456,6 +467,13 @@ a {
     }
 }
 
+
+@media(min-width:530px){
+    .b4{
+       margin-top: -64px;
+    }
+}
+
 /*************MEDIUM SCREENS*******************/
 @media (min-width: 768px){
     .container {
@@ -505,7 +523,24 @@ a {
         z-index: -1;
         min-height: 550px;
     }
-}
+
+    .blog_img {
+        width: 28%;
+        float: left;
+        margin: 1px 1%;
+        height: 250px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #blog_desc {
+        width: 68%;
+        margin: 1px 1%;
+        padding: 0px;
+        background-color: #6290C3;
+        float: left;
+        min-height: 250px;
+    }
 
 #logo {
     display: block;
@@ -515,6 +550,23 @@ a {
     top: 5px;
     left: 50%;
     margin-left: -110px;
+}
+
+#action22{
+    width:100%;
+}
+
+#fixB2blog {
+    top: 1484px;
+    position: absolute;
+    z-index: -1;
+    height: 489px;
+}
+
+#action22 {
+    min-height: 429px;
+}
+
 }
 
 
@@ -606,6 +658,25 @@ a {
 
     #i1 p{
         width: 90%;
+    }
+
+    #fixB2blog {
+        top: 1001px;
+        position: relative;
+        z-index: -1;
+        height: 489px;
+    }
+
+    #action5 p{
+        text-align: center;
+    }
+
+    #action55,#action6{
+        background-color: #C5EBC3;
+    }
+
+    #action22 {
+        min-height: 478px;
     }
 }
 

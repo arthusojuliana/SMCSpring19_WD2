@@ -65,6 +65,11 @@
         width: 760px;
     }
 
+    #action5{
+        width: 100%;
+        float: left;
+    }
+
     .med-width-quart {
         width: 25%;
     }
@@ -89,6 +94,11 @@
         background-image: url(https://www.trbimg.com/img-5c805002/turbine/ct-ae-wildlife-photographer-mangelsen-0310);
         min-height: 500px;
         margin-top: 9px;
+    }
+
+    #action5{
+        width: 100%;
+        float: left;
     }
 }
 
@@ -133,4 +143,6 @@
     .large-width-full {
         width: 100%;
     }
+
+    
 }
