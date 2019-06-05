@@ -2,7 +2,7 @@
 body{
     width: 100%;
     margin: auto;
-    background-color: #7CC19B;
+    background-color:#7cc19b1f;
 }
 
 h2,h3,p{
@@ -23,7 +23,7 @@ a {
     top: 0;
     height: 100px;
     width: 100%;
-    background-color: #7CC19B;
+    background-color: #7cc19b94;
     border-bottom: solid 1px red;
     border-bottom-style: solid;
     box-shadow: 1px 5px 11px rgba(0, 0, 0, 0.3);
@@ -100,7 +100,7 @@ a {
     margin: auto;
     text-decoration: none;
     font-family: 'Karla', sans-serif;
-    font-size: 20px;
+    font-size: 26px;
     padding: 18px;
     font-weight: 800;
     color: #354F52;
@@ -308,7 +308,7 @@ footer {
     height: 200px;
     position: relative;
     bottom: 0px;
-    background-color: #7CC19B;
+    background-color: #7cc19b94;
     border-top: solid red 1px;
     box-shadow: 1px 5px 11px;
 }
